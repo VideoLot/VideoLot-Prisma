@@ -1,0 +1,23 @@
+{
+  "name": "videolee-prisma",
+  "version": "1.0.0",
+  "description": "Prisma Client package for Videolee project",
+  "main": "index.js",
+  "scripts": {
+    "db:generate": "dotenv -- prisma generate",
+    "postinstall" : "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexey Sukhov",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "dotenv": "^16.3.1",
+    "prisma": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.8",
+    "dotenv-cli": "^7.3.0",
+    "typescript": "^5.2.2"
+  }
+}

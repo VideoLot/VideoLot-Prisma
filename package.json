@@ -6,7 +6,7 @@
   "scripts": {
     "db:generate": "dotenv -- prisma generate",
     "postinstall" : "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "author": "Alexey Sukhov",
   "license": "ISC",

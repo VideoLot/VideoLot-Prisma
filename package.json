@@ -21,6 +21,6 @@
     "typescript": "^5.2.2"
   },
   "publishConfig": {
-    "@Sukhov-Alexey:registry": "https://npm.pkg.github.com"
+    "@sukhov-alexey:registry": "https://npm.pkg.github.com"
   }
 }

@@ -19,5 +19,8 @@
     "@types/node": "^20.5.8",
     "dotenv-cli": "^7.3.0",
     "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "@Sukhov-Alexey:registry": "https://npm.pkg.github.com"
   }
 }

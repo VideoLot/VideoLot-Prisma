@@ -1,8 +1,12 @@
 {
-  "name": "videolee-prisma",
+  "name": "@videolot/videolot-prisma",
   "version": "1.0.0",
-  "description": "Prisma Client package for Videolee project",
+  "description": "Prisma Client package for VideoLot project",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:VideoLot/VideoLot-Prisma.git"
+  },
   "scripts": {
     "db:generate": "dotenv -- prisma generate",
     "postinstall" : "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma generate",

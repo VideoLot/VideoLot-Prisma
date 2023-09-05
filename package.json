@@ -1,6 +1,6 @@
 {
   "name": "@videolot/videolot-prisma",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prisma Client package for VideoLot project",
   "main": "client/index.js",
   "types": "client/index.d.ts",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "db:generate": "dotenv -- prisma generate",
-    "postinstall" : "npx prisma generate",
+    "postinstall": "npx prisma generate",
     "test": "exit 0"
   },
   "author": "Alexey Sukhov",
@@ -19,15 +19,15 @@
   "dependencies": {
     "@prisma/client": "^5.2.0",
     "dotenv": "^16.3.1",
-    "prisma": "^5.2.0"
+    "prisma": "*"
   },
   "devDependencies": {
     "@types/node": "^20.5.8",
     "dotenv-cli": "^7.3.0",
+    "prisma": "^5.2.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@prisma/client": "*",
     "prisma": "*"
   },
   "files": [

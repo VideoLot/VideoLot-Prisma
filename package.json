@@ -1,6 +1,6 @@
 {
   "name": "@videolot/videolot-prisma",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Prisma Client package for VideoLot project",
   "main": "client/index.js",
   "types": "client/index.d.ts",

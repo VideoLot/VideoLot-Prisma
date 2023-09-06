@@ -30,6 +30,12 @@ enum StageStatus {
   Failed
 }
 
+enum PanelType {
+  Root
+  Horizontal
+  Grid
+}
+
 model Account {
   id                 String  @id @default(cuid())
   userId             String
@@ -110,6 +116,7 @@ model VideoData {
   audioTracks       AudioTrack[]
   avaliableForTiers SubscribtionTier[]  @relation("TierToVideo")
   VideoProcess      UploadState?
+  categories        Category[]
   createdAt         DateTime?           @default(now())
   updatedAt         DateTime?           @updatedAt
 }
@@ -152,3 +159,20 @@ model UploadState {
   filePath      String
   progress      Float
 }
+
+ model Panel {
+  id        String    @id @default(cuid())
+  type      PanelType
+  title     String?
+  content   Json
+  path      String?
+  version   Int
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+ }
+
+ model Category {
+  id        String    @id @default(cuid())
+  name      String
+  videos    VideoData[]
+ }
